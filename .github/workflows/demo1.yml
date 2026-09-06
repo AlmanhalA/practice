@@ -6,7 +6,7 @@ jobs:
     steps:
     - name: output events data
       run: echo "${{ toJSON(github.event) }}"
-    - name: get code:
+    - name: get code
       uses: actions/checkout@v3
     - name: install dependancies
       run: npm ci
